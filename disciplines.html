@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightFit Store - Disciplines</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-disciplines">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">FightFit <span>Store</span></a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a class="active" href="disciplines.html">Disciplines</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" class="site-main container">
+        <header class="page-header">
+            <h1>Disciplines</h1>
+            <p>Choisis ton art martial ou sport de combat et découvre l'équipement adapté.</p>
+        </header>
+
+        <section class="disciplines-grid" aria-label="Aperçu des disciplines">
+            <article class="discipline">
+                <h2>Boxe</h2>
+                <p>Travail du pied-poing avec gants. Focus sur la technique et le cardio.</p>
+                <ul>
+                    <li>Gants, bandes, protège-dents</li>
+                    <li>Casque, chaussures de boxe</li>
+                </ul>
+            </article>
+            <article class="discipline">
+                <h2>MMA</h2>
+                <p>Mix de striking et grappling. Exige mobilité et protection polyvalente.</p>
+                <ul>
+                    <li>Gants MMA, short, protège-tibias</li>
+                    <li>Rashguard, coquille, protège-dents</li>
+                </ul>
+            </article>
+            <article class="discipline">
+                <h2>Muay Thai</h2>
+                <p>Art des huit membres: poings, coudes, genoux et tibias.</p>
+                <ul>
+                    <li>Short thaï, protège-tibias, coudières</li>
+                    <li>Gants, bandes</li>
+                </ul>
+            </article>
+            <article class="discipline">
+                <h2>JJB</h2>
+                <p>Grappling et soumissions. Vêtements près du corps et résistants.</p>
+                <ul>
+                    <li>Kimono (Gi) ou No-Gi: rashguard, short</li>
+                    <li>Protège-oreilles, ceintures</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner container">
+            <p>&copy; <span id="year"></span> FightFit Store.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+

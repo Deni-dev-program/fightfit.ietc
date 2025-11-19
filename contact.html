@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightFit Store - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-contact">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">FightFit <span>Store</span></a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="disciplines.html">Disciplines</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" class="site-main container">
+        <header class="page-header">
+            <h1>Nous contacter</h1>
+            <p>Une question sur une commande ou un produit ? Écrivez-nous.</p>
+        </header>
+
+        <section class="contact-section" aria-label="Formulaire de contact">
+            <form class="contact-form" action="#" method="post" novalidate>
+                <fieldset>
+                    <legend>Vos informations</legend>
+                    <div class="form-row">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Jean" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Dupont" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78">
+                    </div>
+                    <div class="form-row">
+                        <label for="date">Date de naissance</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <div class="form-row">
+                        <label for="sujet">Sujet</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option>Commande</option>
+                            <option>Produit</option>
+                            <option>Retour</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <span>Discipline</span>
+                        <div class="choices">
+                            <label><input type="radio" name="discipline" value="boxe"> Boxe</label>
+                            <label><input type="radio" name="discipline" value="mma"> MMA</label>
+                            <label><input type="radio" name="discipline" value="jjb"> JJB</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox">
+                            <input type="checkbox" name="newsletter" id="newsletter"> S'abonner à la newsletter
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Envoyer</button>
+                    <button class="btn btn-secondary" type="reset">Réinitialiser</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner container">
+            <p>&copy; <span id="year"></span> FightFit Store.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+

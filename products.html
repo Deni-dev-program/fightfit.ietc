@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightFit Store - Produits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-products">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">FightFit <span>Store</span></a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a class="active" href="products.html">Produits</a></li>
+                    <li><a href="disciplines.html">Disciplines</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" class="site-main">
+        <header class="page-header container">
+            <h1>Catalogue</h1>
+            <p>Équipe complète pour tous les sports de combat.</p>
+        </header>
+
+        <section class="filters" aria-label="Filtres produits">
+            <div class="container filters-inner">
+                <form class="filter-form" action="#" method="get">
+                    <label for="discipline">Discipline</label>
+                    <select id="discipline" name="discipline">
+                        <option value="">Toutes</option>
+                        <option>Boxe</option>
+                        <option>MMA</option>
+                        <option>Muay Thai</option>
+                        <option>JJB</option>
+                    </select>
+
+                    <label for="taille">Taille</label>
+                    <select id="taille" name="taille">
+                        <option value="">Toutes</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+
+                    <button class="btn btn-primary" type="submit">Appliquer</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="catalog" aria-label="Liste des produits">
+            <div class="container">
+                <div class="product-grid">
+                    <article id="gants" class="product-card">
+                        <img src="images/gants.jpg" alt="Gants de boxe noirs" loading="lazy">
+                        <h2>Gants Pro</h2>
+                        <p>Conçus pour l'intensité. Paume ventilée.</p>
+                        <button class="btn btn-secondary" type="button">Ajouter au panier</button>
+                    </article>
+                    <article id="rashguard" class="product-card">
+                        <img src="images/rashguard.jpg" alt="Rashguard noir pour JJB" loading="lazy">
+                        <h2>Rashguard Elite</h2>
+                        <p>Anti-déchirure, coutures plates.</p>
+                        <button class="btn btn-secondary" type="button">Ajouter au panier</button>
+                    </article>
+                    <article id="short" class="product-card">
+                        <img src="images/short.jpg?v=1" alt="Short de MMA" loading="lazy">
+                        <h2>Short MMA</h2>
+                        <p>Tissu extensible 4D, fente latérale.</p>
+                        <button class="btn btn-secondary" type="button">Ajouter au panier</button>
+                    </article>
+                    <article id="bandes" class="product-card">
+                        <img src="images/bandes.jpg?v=1" alt="Bandes de boxe" loading="lazy">
+                        <h2>Bandes Boxe</h2>
+                        <p>Maintien et confort longue durée.</p>
+                        <button class="btn btn-secondary" type="button">Ajouter au panier</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/protege-dents.jpg?v=1" alt="Protège-dents" loading="lazy">
+                        <h2>Protège-dents</h2>
+                        <p>Thermoformable, ajustement sécurisé.</p>
+                        <button class="btn btn-secondary" type="button">Ajouter au panier</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/tibia.jpg?v=1" alt="Protèges-tibias" loading="lazy">
+                        <h2>Protèges-tibias</h2>
+                        <p>Protection maximale, attaches renforcées.</p>
+                        <button class="btn btn-secondary" type="button">Ajouter au panier</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> FightFit Store.</p>
+            <aside class="footer-links" aria-label="Liens secondaires">
+                <a href="about.html#mentions">Mentions légales</a>
+                <a href="contact.html">Support</a>
+            </aside>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightFit Store - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Magasin de vêtements de sport de combat: MMA, Boxe, Muay Thai, JJB.">
+</head>
+<body class="page-home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Retour à l'accueil">FightFit <span>Store</span></a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a class="active" href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="disciplines.html">Disciplines</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" class="site-main">
+        <section class="hero" aria-label="Promotion principale">
+            <div class="container hero-inner">
+                <article class="hero-copy">
+                    <h1>Équipe-toi pour le combat</h1>
+                    <p>Découvrez notre sélection premium de vêtements et équipements pour MMA, boxe, Muay Thai et Jiu-Jitsu brésilien.</p>
+                    <p>
+                        <a class="btn btn-primary" href="products.html">Voir la boutique</a>
+                        <a class="btn btn-secondary" href="disciplines.html">Choisir ma discipline</a>
+                    </p>
+                </article>
+                <aside class="hero-media" aria-label="Visuel promotionnel">
+                    <img src="images/michael-starkie-ynaiLpRBigY-unsplash.jpg" alt="Athlète en tenue de sport de combat" loading="lazy">
+                </aside>
+            </div>
+        </section>
+
+        <section class="featured" aria-label="Produits en vedette">
+            <div class="container">
+                <h2>Nos indispensables</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="images/gants.jpg" alt="Gants de boxe noirs" loading="lazy">
+                        <h3>Gants Pro</h3>
+                        <p>Protection et puissance. Idéals pour l'entraînement.</p>
+                        <a class="btn btn-link" href="products.html#gants">Voir</a>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/rashguard.jpg" alt="Rashguard pour JJB" loading="lazy">
+                        <h3>Rashguard Elite</h3>
+                        <p>Compression, respirabilité et style pour le grappling.</p>
+                        <a class="btn btn-link" href="products.html#rashguard">Voir</a>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/short.jpg?v=1" alt="Short de MMA" loading="lazy">
+                        <h3>Short MMA</h3>
+                        <p>Léger et résistant, conçu pour la mobilité totale.</p>
+                        <a class="btn btn-link" href="products.html#short">Voir</a>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/bandes.jpg?v=1" alt="Bandes de boxe" loading="lazy">
+                        <h3>Bandes Boxe</h3>
+                        <p>Maintien optimal des poignets et des mains.</p>
+                        <a class="btn btn-link" href="products.html#bandes">Voir</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" aria-label="Appel à l'action">
+            <div class="container">
+                <h2>Prêt à passer au niveau supérieur ?</h2>
+                <p>Inscris-toi à notre newsletter pour des conseils d'entraînement et des offres exclusives.</p>
+                <a class="btn btn-primary" href="contact.html#newsletter">M'inscrire</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> FightFit Store. Tous droits réservés.</p>
+            <aside class="footer-links" aria-label="Liens secondaires">
+                <a href="about.html#mentions">Mentions légales</a>
+                <a href="contact.html">Support</a>
+            </aside>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
