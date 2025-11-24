@@ -16,9 +16,5 @@ Un site vitrine pour un magasin de vêtements de sports de combat (MMA, Boxe, Mu
 - CSS Grid: grilles de produits, sections d'information
 - Formulaire complet et accessible (labels, `required`, placeholders)
 - Responsive design: mobile (<768px), tablette (768–1024px), desktop (>1024px) via media queries
-
-## Utilisation
-
-Ouvrez `index.html` dans votre navigateur. Ajoutez vos images dans `images/` et remplacez les fichiers placeholders (`hero.jpg`, `gants.jpg`, etc.).
-
-
+  
+Projet web ietc 
